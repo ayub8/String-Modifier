@@ -1,0 +1,36 @@
+/**
+
+Reads a string from the keyboard and modifies it to a different string.
+The modified string is then displayed on the output.
+@author: [MD AYUB NABI]
+*/
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Modifier</title>
+</head>
+<body>
+    <h1>String Modifier</h1>
+    <p>Enter a string below to modify it:</p>
+    <input type="text" id="inputStr">
+    <button onclick="modifyString()">Modify String</button>
+    <p id="output"></p>
+<script>
+    function modifyString() 
+    {
+        // Get the input string from the textbox
+        var inputStr = document.getElementById("inputStr").value;
+
+        // Modify the string by changing all characters to uppercase
+        var modifiedStr = inputStr.toUpperCase();
+
+        // Display the modified string on the page
+        document.getElementById("output").innerHTML = modifiedStr;
+
+        //display the modified string in the consol 
+        console.log(modifiedStr);
+    }
+</script>
+</body>
+</html>
